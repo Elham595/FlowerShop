@@ -1,0 +1,79 @@
+<!-- <div class="container">
+    <div class="login d-flex mt-20">
+        <div class="left">
+            <img src="./../../../assets/The Power of Daisy Flower Extract.jpg" alt="">
+        </div>
+        <form [formGroup]="signForm" (ngSubmit)="signSubmit()" class="d-flex">
+            <label for="">Sign Up</label>
+            <div  *ngIf="signForm.get('fullName')?.errors && signForm.get('fullName')?.touched"
+                  class="alert alert-danger">
+                  <p *ngIf="signForm.get('fullName')?.errors?.['required']">Enter Your Full Name</p>
+                  <p *ngIf="signForm.get('fullName')?.errors?.['maxLength']">8 Characters Required</p>
+            </div>
+            <div class="p-relative">
+              <i class="fa-solid fa-user fa-fw"></i>
+              <input type="text" formControlName="fullName" class="bg-transparent m-10"
+                placeholder="Full Name...">
+            </div>
+            <div  *ngIf="signForm.get('email')?.errors && signForm.get('email')?.touched"
+                      class="alert alert-danger">
+                  <p *ngIf="signForm.get('email')?.errors?.['required']">Email Is Required</p>
+                  <p *ngIf="signForm.get('email')?.errors?.['email']">Invalid Email</p>
+            </div>
+            <div class="p-relative">
+              <i class="fa-solid fa-message fa-fw"></i>
+              <input type="email" formControlName="email" class="bg-transparent m-10"
+                placeholder="Email@gmail.com...">
+            </div>
+            <div *ngIf="signForm.get('password')?.errors && signForm.get('password')?.touched"
+                      class="alert alert-danger">
+                  <p *ngIf="signForm.get('password')?.errors?.['required']">Enter Your Password</p>
+                  <p *ngIf="signForm.get('password')?.errors?.['pattern']">Invalid Password</p>
+            </div>
+            <div class="p-relative">
+              <i class="fa-solid fa-key fa-fw"></i>
+              <input type="password" formControlName="password" class="bg-transparent m-10"
+                placeholder="******">
+            </div>
+            <button type="submit" [disabled]="signForm.invalid" class="btn btn-orange">Sign Up</button>
+        </form>
+  </div>
+</div> -->
+
+
+<div class="container" *ngIf="!check">
+  <div class="login d-flex mt-20">
+    <div class="left">
+      <img src="./../../../assets/The Power of Daisy Flower Extract.jpg" alt="">
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()" class="d-flex">
+      <label for="">LogIn</label>
+      <div  *ngIf="loginForm.get('email')?.errors && loginForm.get('email')?.touched"
+                class="alert alert-danger">
+            <p *ngIf="loginForm.get('email')?.errors?.['required']">Email Is Required</p>
+            <p *ngIf="loginForm.get('email')?.errors?.['email']">Invalid Email</p>
+      </div>
+      <div class="p-relative">
+              <i class="fa-solid fa-message fa-fw"></i>
+              <input type="email" formControlName="email" class="bg-transparent m-10"
+                placeholder="Email@gmail.com...">
+       </div>
+      <div *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched"
+                class="alert alert-danger">
+            <p *ngIf="loginForm.get('password')?.errors?.['required']">Enter Your Password</p>
+            <p *ngIf="loginForm.get('password')?.errors?.['pattern']">Invalid Password</p>
+      </div>
+       <div class="p-relative">
+              <i class="fa-solid fa-key fa-fw"></i>
+              <input type="password" formControlName="password" class="bg-transparent m-10"
+                placeholder="******">
+       </div>
+      <button type="submit" class="btn btn-orange" [disabled]="loginForm.invalid">LogIN</button><!---- -->
+      <div class="account">
+            <a routerLink="signUp" (click)="checked()">Don't Have Account?Create Account.</a>
+           <a routerLink="" (click)="checked()">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+</div>
+<router-outlet *ngIf="check"></router-outlet>

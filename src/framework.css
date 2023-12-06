@@ -1,0 +1,155 @@
+/***********START BOX***********/
+.d-flex{
+  display: flex;
+}
+.space-between{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
+}
+.align-center{
+  align-items: center;
+}
+.d-grid{
+  display: grid;
+}
+.gap-10{
+  gap: 10px;
+}
+.gap-20{
+  gap: 20px;
+}
+/*****END BOX*****/
+/********POSITION**********/
+.p-relative{
+  position: relative;
+}
+/********WIDTH & HEIGHT**********/
+.h-400{
+  height: 400px;
+}
+.w-300{
+  width: 310px;
+}
+@media (max-width:767px){
+  .h-400{
+      height: 350px;
+  }
+}
+/*****START MARGIN & PADDING*****/
+.p-10{
+  padding: 10px;
+}
+.p-20{
+  padding: 20px;
+}
+.m-10{
+  margin: 10px;
+}
+.m-20{
+  margin: 20px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mr-10{
+  margin-right: 10px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.ml-20{
+  margin-left: 20px;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+/*****START MARGIN & PADDING*****/
+/*******START COLOR & BORDER*******/
+.rad-6{
+  border-radius: 6px;
+}
+.rad-10{
+  border-radius: 10px;
+}
+.rad-20{
+  border-radius:  20px;
+}
+.bg-white{
+  background-color: white;
+}
+/*****END COLOR*****/
+/**********START FONT**********/
+.f-14{
+  font-size: 14px;
+}
+.text-center{
+  text-align: center;
+}
+/*****END FONT*****/
+/*****************START BUTTONS*************/
+.btn{
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.btn-primary{
+  background-color: #0075ff;
+}
+.btn-primary:hover{
+  background-color: #2e8cf8;
+}
+.btn-success{
+  background-color: #22c55e;
+}
+.btn-success:hover{
+  background-color: #3ece73;
+}
+.btn-danger{
+  background-color: #f44336;
+}
+.btn-danger:hover{
+  background-color: #f8675d;
+}
+.btn-orange{
+  background-color: #f7b13c;
+}
+.btn-orange:hover{
+  background-color: #f7c46c;
+}
+/*****************END BUTTONS**************/
+/**********START COMPONENT**********/
+.d-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.d-wrap{
+  flex-wrap: wrap;
+}
+.d-around{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.d-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mycontainer{
+  width: 86%;
+  margin: auto;
+}

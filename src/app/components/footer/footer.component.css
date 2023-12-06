@@ -1,0 +1,100 @@
+footer{
+  margin-top: 140px;
+  height: 50vh;
+  background: url("./../../../assets/Mini baby pixie carnations_baby pixie_mini carnation_white pixie_white carnation_white_baby ones birthday_baptism_christening cake flowers.jpg");
+  background-position: center;
+  background-size: cover;
+  position: sticky;
+}
+footer .background{
+  height: 50vh;
+  background: linear-gradient(145deg ,#f378b3c1 0%,#ee7caabb 10%,#e87f79b7 20%,#d9926ca9 30%,#dc984ac3 40%,
+  #bfa2b2c0 50%,#cc9ba1bf 70%, #93d8b9bb 100%);
+  -webkit-backdrop-filter: blur(3.4px);
+  backdrop-filter: blur(3.4px);
+
+}
+footer .background .content{
+  width: 70%;
+  text-align: center;
+}
+footer .background .content>div{
+  margin-top: 80px;
+  width: 33.333%;
+}
+
+footer .background h3{
+  color: white;
+  margin-bottom: 30px;
+}
+footer .background ul {
+  list-style: none;
+}
+footer .background ul li{
+  margin-bottom: 10px;
+}
+a{
+  text-decoration: none;
+  color: #e3edeed6;
+}
+footer.background h3, footer .background p{
+  color: #e3edeed6;
+}
+.fa-facebook, .fa-instagram{
+  color: #e3edeed6;
+  font-size: 25px;
+  font-weight: bold;
+}
+footer .background form input{
+  width: 421px;
+  height: 39px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #FFF;
+  padding-left: 20px;
+  outline: none;
+  margin-top: 10px;
+  position: relative;
+}
+footer .background form input::placeholder{
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+footer .background form .btn-sub{
+  position: absolute;
+  left: 65%;
+  top: 62.5%;
+  z-index: 11111111111;
+  outline: none;
+  padding: 5px;
+  text-align: right;
+  width: 135px;
+  height: 30px;
+  background-image: url("./../../../assets/button.png");
+  color: #8dc6ccfe;
+}
+footer .background .image{
+  width: 30%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+footer .background .image img{
+  width: 100%;
+  height: 550px;
+  mix-blend-mode: multiply;
+}
+
+
+
+
+
+
+
+
+
+
+
+

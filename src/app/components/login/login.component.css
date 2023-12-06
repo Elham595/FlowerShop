@@ -1,0 +1,79 @@
+.login{
+  position: relative;
+  height: 80vh;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px 10px rgb(255, 242, 220);
+}
+.login .left{
+  width: 40%;
+  align-self: flex-end;
+}
+.login .left img{
+  width: 500px;
+  height: 700px;
+  vertical-align: middle;
+  transform: rotate(25deg);
+  mix-blend-mode: multiply;
+}
+.login form{
+  width: 60%;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.login form label{
+  text-align: center;
+  font-size: 55px;
+  margin-top: -70px;
+  margin-bottom: 90px;
+  margin-left: -140px;
+  color: rgba(238, 161, 17, 0.806);
+}
+.login form .fa-user,
+.login form .fa-key,.login form .fa-message{
+  color: rgb(251, 190, 78);
+  position: absolute;
+  top: 31%;
+  left: 3.5%;
+  font-size: 17px;
+}
+.login form input{
+  width: 80%;
+  border: 1px solid rgb(246, 203, 122);
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  /* border-bottom: 1px solid rgb(206, 206, 206); */
+  margin-bottom: 20px;
+}
+.login form input:hover{
+  border-color:#f79e21;
+}
+.login form input::placeholder{
+  padding-left: 34px;
+}
+.login button{
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  left: 40%;
+  top: 110%;
+  border-radius: 20px;
+
+}
+.login .account{
+  position: absolute;
+  top: 150%;
+  left: 10%;
+}
+.login .account a{
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+  text-align: center;
+  font-size: 13px;
+}
+.login .account a:first-child{
+  margin-right: 110px;
+}

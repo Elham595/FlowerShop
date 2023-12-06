@@ -1,0 +1,8 @@
+<div class="container d-grid data">
+  <div *ngFor="let boquet of boquetData.boquet">
+      <img [src]="boquet.imageUrl" alt="">
+      <h4>Available Amount :{{boquet.quantity}}</h4>
+      <h5>Price :${{boquet.price}}</h5>
+      <button class="btn btn-orange">Buy Now</button>
+  </div>
+</div>

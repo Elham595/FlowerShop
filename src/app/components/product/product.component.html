@@ -1,0 +1,25 @@
+<div class="product">
+  <div class="container d-flex align-center">
+    <div class="data">
+      <h1>{{products.flowers[typeId].name}}</h1>
+      <p class="mt-20 mb-20">{{products.flowers[typeId].description}}</p>
+      <p>Familiy : {{products.flowers[typeId].family}}</p>
+      <span>Colors Availabe :</span>
+      <div class="d-flex mb-20 colors">
+        <div class="circle circ1"></div>
+        <div class="circle circ2"></div>
+        <div class="circle circ3"></div>
+    </div>
+    </div>
+    <div class="image">
+        <img [src]="products.flowers[typeId].imageUrl[0]" *ngIf="showType1">
+        <img [src]="products.flowers[typeId].imageUrl[1]" *ngIf="showType2">
+        <img [src]="products.flowers[typeId].imageUrl[2]" *ngIf="showType3">
+        <div class="d-flex mb-20 buttons">
+          <button class="circle"  (click)="displayType1()"></button>
+          <button class="circle"  (click)="displayType2()"></button>
+          <button class="circle"  (click)="displayType3()"></button>
+      </div>
+    </div>
+  </div>
+</div>

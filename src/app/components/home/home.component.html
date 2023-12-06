@@ -1,0 +1,138 @@
+<div *ngIf="!check"><!--check to view product page-->
+    <div *ngIf="!checkVase">
+    <div *ngIf="!checkBoquet">
+    <div *ngIf="!checkGift">
+    <!--------------START HEADER SECTION--------------->
+    <header>
+      <div class="background">
+        <div class="mycontainer d-flex">
+            <div class="rect">
+                <h1>Yasmina <br><span>Fresh & Silky Daily</span></h1>
+                <p>Yasmina recognizes that flowers is the most eligible
+                  object in the world, So that we made a special
+                  community for flower lovers and interesters. Our flowers
+                  can be designes to naturally enhance your home or office so that
+                  they become a part of the interior and your daily lifestyle.
+                </p>
+                <button class="btn btn-orange" routerLink="/home" fragment="categories">Shop Now</button>
+            </div>
+            <div class="tri">
+              <!-- <img src="./../../../assets/fuschia_prev_ui.png" alt=""> -->
+              <img src="./../../../assets/Floral Bouquet Aesthetic.jpg" alt="">
+            </div>
+        </div>
+      </div>
+    </header>
+      <!--------------START ABOUT SECTION--------------->
+    <div class="about container d-flex gap-10" #aboutSection id="about">
+        <div class="left">
+            <h2>Yasmina<br> Flower Shop<br><span>With Love & Dedication</span></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, deleniti! Est, amet in rerum at optio cupiditate natus iusto officia harum, minus ipsum exercitationem quae soluta dignissimos. Dolorem, omnis quaerat! amet in rerum at optio cupiditate natus iusto officia harum, minus ipsum exercitationem quae soluta dignissimos. Dolorem, omnis quaerat!</p>
+            <div class="p-relative">
+                <button class="btn" routerLink="/home" fragment="categories">OUR Shop</button>
+                <div class="btn-container"></div>
+            </div>
+          </div>
+        <div class="right p-relative">
+            <img src="./../../../assets/The Succulent Shop.jfif" alt="">
+            <img src="./../../../assets/43ac7a96-f2ef-4172-a81d-578638262e0b.jfif" alt="">
+          </div>
+    </div>
+      <!--------------START CATEGORIES SECTION--------------->
+    <section class="categories" #categoriesSection id="categories">
+      <div class="background">
+      <div class="container">
+        <h2 class="text-center p-20">Our Categories<br>
+          <span>The Varaiety Is Here!</span>
+        </h2>
+        <div class="d-flex gap">
+            <div class="category">
+                <img src="./../../../assets/Flowers 🌸 on Twitter.jpg">
+                <h4 routerLink="boquet" (click)="checkedBoquet()">Boquets</h4>
+            </div>
+            <div class="category">
+              <img src="./../../../assets/bouquet&vase/v4.jpg">
+              <h4 routerLink="vase" (click)="checkedVase()">Vase</h4>
+          </div>
+          <div class="category">
+            <img src="./../../../assets/bouquet&vase/g5.jpg">
+            <h4 routerLink="gift" (click)="checkedGift()">Gifts</h4>
+        </div>
+        <!-- <div class="category">
+          <img src="./../../../assets/Flowers 🌸 on Twitter.jpg">
+          <h4>Boquets</h4>
+      </div> -->
+        </div>
+      </div>
+      </div>
+    </section>
+      <!--------------START CONTACT SECTION--------------->
+    <section class="contact" #contactSection id="contact">
+      <div class="container p-relative">
+          <form class="d-flex">
+            <h2 class="text-center">Contact Us</h2>
+              <input type="email"  placeholder="Your Email">
+              <input type="number" placeholder="Your Phone">
+              <textarea cols="20" rows="10" placeholder="Your Message..."></textarea>
+              <button class="btn btn-orange">Send</button>
+          </form>
+      </div>
+    </section>
+      <!---------------START FLOWER TYPES---------------->
+    <div class="flowerTypes container p-relative" #typesSection id="types">
+        <div><!--class="image"--->
+          <h2>Featured Products <br><span>Fresh & Silky Daily</span></h2>
+        </div>
+        <div class="types d-flex" *ngIf="showType1">
+              <!--<div class="d-flex">--->
+              <div class="type d-center" *ngFor="let type of flowerData.types1">
+                <img [src]="type.src" alt="">
+                <h3>{{type.name}}</h3>
+                <h5>From ${{type.price}}</h5>
+                <div class="line"></div>
+                <i class="fa-solid fa-bag-shopping icon mb-10"></i>
+                <a routerLink="product"  (click)="checked(type.id)">Buy Now</a>
+                <!-- <app-product [idFromParent]="type.id"></app-product> -->
+              </div>
+              <!--/div---->
+        </div>
+        <!-- <router-outlet></router-outlet> -->
+        <div class="types d-flex" *ngIf="showType2">
+              <div class="type d-center" *ngFor="let type of flowerData.types2">
+                <img [src]="type.src" alt="">
+                <h3>{{type.name}}</h3>
+                <h5>From ${{type.price}}</h5>
+                <div class="line"></div>
+                <i class="fa-solid fa-bag-shopping icon mb-10"></i>
+                <a routerLink="product"  (click)="checked(type.id)">Buy Now</a>
+                <!-- <app-product [idFromParent]="type.id"></app-product> -->
+              </div>
+        </div>
+        <div class="types d-flex" *ngIf="showType3">
+              <div class="type d-center" *ngFor="let type of flowerData.types3">
+                <img [src]="type.src" alt="">
+                <h3>{{type.name}}</h3>
+                <h5>From ${{type.price}}</h5>
+                <div class="line"></div>
+                <i class="fa-solid fa-bag-shopping icon mb-10"></i>
+                <a routerLink="product"  (click)="checked(type.id)">Buy Now</a>
+                <!-- <app-product [idFromParent]="type.id"></app-product> -->
+              </div>
+        </div>
+        <div class="d-flex ml-20 mb-20 buttons">
+          <button class="circle"  (click)="displayType1()"></button>
+          <button class="circle"  (click)="displayType2()"></button>
+          <button class="circle"  (click)="displayType3()"></button>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+<app-vase *ngIf="checkVase"></app-vase>
+<app-boquets *ngIf="checkBoquet"></app-boquets>
+<app-gift *ngIf="checkGift"></app-gift>
+<!-- <router-outlet *ngIf="check" ></router-outlet> -->
+<app-product [typeId]="id" *ngIf="check"></app-product>
+
+

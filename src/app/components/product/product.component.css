@@ -1,0 +1,74 @@
+.product{
+  /* background: url('./../../../assets/Pin on Fundo de tela.jpg');
+  background-position: center;
+  background-size: cover; */
+  /* background: linear-gradient(145deg ,#f378b3c1 0%,#ee7caabb 10%,#e87f79b7 20%,#d9926ca9 30%,#dc984ac3 40%,
+  #bfa2b2c0 50%,#cc9ba1bf 70%, #93d8b9bb 100%); */
+  height: 80vh;
+}
+.data{
+  width: 50%;
+  color: rgba(0, 0, 0, 0.676);
+  position: absolute;
+  top: 25%;
+}
+.data h1{
+  color: #631f6f;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.data p{
+  width: 70%;
+  line-height: 28px;
+  font-size: 20px;
+}
+.data p:last-child{
+  margin-bottom: 120px;
+}
+.data .colors{
+  margin-top: 15px;
+}
+.image{
+  width: 50%;
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+.image img{
+  width: 600px;
+  height: 450px;
+  /* border-top-right-radius: 320px;
+  border-bottom-left-radius: 320px;
+  border-bottom-right-radius: 600px;
+  border-top-left-radius: 600px; */
+}
+.image .buttons{
+  margin-top: 50px;
+  margin-left: 200px;
+}
+.image .buttons .circle,
+.data .colors .circle{
+  width:12px;
+  height:12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color:#792a87b7;
+  cursor: pointer;
+}
+.image .buttons .circle:focus{
+  background-color: #b871c4;
+}
+.data .colors .circle{
+  width:14px;
+  height:14px;
+}
+.data .colors .circ1{
+  background-color: #e76b7c;
+}
+.data .colors .circ2{
+  background-color: #e78f9a;
+}
+.data .colors .circ3{
+  background-color: #de941e;
+}

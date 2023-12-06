@@ -1,0 +1,381 @@
+html{
+  scroll-behavior: smooth;
+}
+header{
+  height: 90vh;
+  /* background: linear-gradient(145deg ,#f378b3 0%,#ee7caa 10%,#e87f79 20%,#d9926c 30%,#dc994a 40%,
+  #bfa2b2 50%,#cc9ba1 70%, #93d8b9 100%); */
+  background: url("./../../../assets/Mini baby pixie carnations_baby pixie_mini carnation_white pixie_white carnation_white_baby ones birthday_baptism_christening cake flowers.jpg");
+  background-position: center;
+  background-size: cover;
+}
+header .background{
+  height: 90vh;
+  background: linear-gradient(145deg ,#f378b3c1 0%,#ee7caabb 10%,#e87f79b7 20%,#d9926ca9 30%,#dc984ac3 40%,
+  #bfa2b2c0 50%,#cc9ba1bf 70%, #93d8b9bb 100%);
+  -webkit-backdrop-filter: blur(3.4px);
+  backdrop-filter: blur(3.4px);
+
+}
+/* background: linear-gradient(145deg ,#f378b3c1 0%,#ee7caabb 10%,#e87f79b7 20%,#d9926ca9 30%,#dc984ac3 40%,
+  #bfa2b2c0 50%,#cc9ba1bf 70%, #93d8b9bb 100%); mini
+   background: linear-gradient(145deg ,#f378b3ac 0%,#ee7caaa4 10%,#e87f79b7 20%,#d9926ca9 30%,#dc984a99 40%,
+  #bfa2b29f 50%,#cc9ba19e 70%, #93d8b9a3 100%); trav*/
+header .background .rect{
+  width: 50%;
+  padding-left: 100px;
+}
+header .background .rect h1{
+  color: white;
+  margin-top: 200px;
+  margin-bottom: 60px;
+  font-size: 75px;
+  letter-spacing: 3px;
+  position: relative;
+}
+header .background .rect span{
+  color: #dcfcfc;
+  font-size: 13px;
+  margin-left: 10px;
+  font-weight:lighter;
+  word-spacing: 3px;
+  letter-spacing: 8px;
+  position: absolute;
+
+}
+header .background .rect p{
+  color: #e3edeed6;
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+header .background .rect button{
+  width: 160px;
+  height: 50px;
+  background: url("./../../../assets/button.png");
+  background-size: cover;
+  background-position: center;
+  font-size: larger;
+}
+header .background .tri{
+  width: 50%;
+  height: 80vh;
+  /* border-right: 1px solid rgb(231, 231, 231);*/
+  /* transform: rotate(35deg); */
+}
+header .background .tri img{
+  width: 700px;
+  height: 705px;
+  position: absolute;
+  top: 0;/*-10%*/
+  right: 0;
+  /* vertical-align: middle;
+  transform: rotate(350deg); */
+  mix-blend-mode:color-burn;
+  border-top-left-radius: 900px;
+  border-bottom-left-radius: 900px;
+  /* box-shadow: 60px 0 0px 50px rgba(250, 232, 183, 0.463);
+} */
+}
+/*************COMMON STYLING*************/
+h2{
+  color: #1c446d;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  letter-spacing: 2px;
+}
+span{
+  color: #b6bed6;
+  font-size: 13px;
+  margin-top: 7px;
+  font-weight:lighter;
+  word-spacing: 3px;
+  letter-spacing: 4px;
+  position: absolute;
+}
+/****************START ABOUT SECTION******************/
+.about{
+  height: 80vh;
+  margin-top: 100px;
+  padding-top: 100px;
+}
+.about .left{
+  width: 50%;
+}
+.about h2{
+  text-align: left;
+}
+.about span{
+  left:9%;
+  color: #c5d0e1;
+}
+.about p{
+  width: 70%;
+  color: rgb(119, 119, 119);
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+.about .btn{
+  width: 150px;
+  height: 40px;
+  border: 2px solid #631f6f;
+  border-radius: 25px;
+  outline: none;
+  color: #631f6f;
+}
+.about .btn-container{
+  width: 150px;
+  height: 52px;
+  border: 2px solid #e8e8e8;
+  border-radius: 25px;
+  outline: none;
+  position: absolute;
+  left: 3%;
+  top: -14%;
+  z-index: -1;
+}
+.about .right{
+  width: 50%;
+}
+.about .right img{
+    width:80%;
+    height: 85%;
+    position: absolute;
+}
+.about .right img:first-child{
+    top: -15%;
+    left: 13%;
+}
+.about .right img:last-child{
+  width: 85%;
+    height: 55%;
+    top: 60%;
+    left: -25%;
+}
+/****************START CATEGORIES SECTION******************/
+.categories{
+  margin-top: 150px;
+  padding-top: 30px;
+  height: 500px;
+  /* background: url("./../../../assets/Mini baby pixie carnations_baby pixie_mini carnation_white pixie_white carnation_white_baby ones birthday_baptism_christening cake flowers.jpg");
+  background-position: center;
+  background-size: cover; */
+}
+.categories .background{
+  /* background: linear-gradient(145deg ,#f378b3c1 0%,#ee7caabb 10%,#e87f79b7 20%,#d9926ca9 30%,#dc984ac3 40%,
+  #bfa2b2c0 50%,#cc9ba1bf 70%, #93d8b9bb 100%);
+  -webkit-backdrop-filter: blur(3.4px);
+  backdrop-filter: blur(3.4px); */
+  height: 500px;
+}
+.categories h2{
+  margin-bottom: 35px;
+}
+.categories span{
+  left:43%;
+}
+.categories .gap{
+  gap: 80px;
+}
+.categories .category{
+  width: 28%;
+  position: relative;
+}
+.categories .category img{
+  width: 100%;
+  height: 280px;
+  /* border-radius: 20px; */
+  /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
+}
+.categories .category h4{
+  margin-top: 20px;
+  text-align: center;
+  color:#1c446d;
+}
+.categories .category:hover{
+  background-color: #ced4d9ae;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.categories .category:hover img{
+  position: absolute;
+  z-index: -1;
+}
+.categories .category:hover h4{
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}/*rgba(31, 60, 80, 0.853)*/
+.categories .category:hover::after{
+  content: "Yasmina Providing a Various Collection of Flower Boquets of Different Types of Flowers Daily.Yasmina Providing a Various Collection of Flower Boquets of Different Types of Flowers Daily";
+  color: white;
+  line-height: 28px;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+}
+.categories .category:nth-child(2):hover::after{
+  content: "You Can Now Buy The Vases You Love Not Only The Flowers. Take a Tour and Order Now. a Collection of Different Vases with Different Sizes and Shapes";
+}
+.categories .category:last-child:hover::after{
+  content: "You Can Now Buy Make The Gift as You Want With Any Component Not Only Flowers, but Also Choclates, Toys and Sevoneirs. Take a Tour and Order Now.";
+}
+/* .categories .category:last-child:hover::after{
+  content: "this is jojo kih fgfg etregfbb";
+} */
+/*****************START CONTACT SECTION******************/
+.contact{
+  background-color: white;
+  height: 400px;
+  margin-top: 80px;
+  padding-top: 50px;
+}
+.contact::before{
+  background-image: url('./../../../assets/bouquet&vase/Our Top 20 Instagram Posts of 2020.png');
+  background-size: 500px 400px;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 15%;
+  content: '';
+}
+.contact form{
+  width: 30%;
+  flex-direction: column;
+  position: absolute;
+  right: 17%;
+  gap: 20px;
+}
+.contact form h2{
+  margin-bottom: 10px;
+}
+.contact form input{
+  height: 40px;
+  outline: none;
+  border: 1px solid rgb(247, 198, 107);
+  border-radius: 40px;
+
+}
+.contact form textarea{
+  height: 100px;
+  border: 1px solid rgb(247, 198, 107);
+  border-radius: 15px;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+  padding-left: 20px;
+  font-size: 14px;
+  color: rgb(164, 164, 164);
+}
+.contact form .btn{
+  width: 100%;
+  border-radius: 40px;
+}
+/*****************PRODUCTS FEATURED SECTION******************/
+.flowerTypes {
+  margin-top: 100px;
+  padding-top: 50px;
+}
+/* .flowerTypes .image{
+  background: url("./../../../assets//daisies, daisy, cottage core, nature, white, yellow, green, aesthetic, breathtaking, lockscreen, flowe… _ Daisy wallpaper, Yellow aesthetic pastel, Flower aesthetic.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+.flowerTypes h2{
+  text-align: center;
+  /* height: 200px;
+  background-color: #ffffff84;
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px); */
+}
+.flowerTypes span{
+  left:43%;
+}
+.types{
+  background-color: white !important;
+}
+.types .type{
+  flex-direction: column;
+  width: 25%;
+}
+.types .type img{
+  width: 190px;
+  height: 190px;
+  mix-blend-mode: multiply;
+}
+.types .type h3{
+  margin-top: 20px;
+  font-size: 35px;
+}
+.types .type h5{
+  color: rgb(167, 167, 167);
+  font-size: 12px;
+}
+.types .type h3{
+  color: #631f6f;
+  font-weight: 500;
+}
+.types .type a{
+  color: #88a9d7;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.line{
+  width: 50%;
+  margin: 8px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgb(231, 231, 231);
+}
+.icon{
+  font-size: 22px;
+  color: #88a9d7;
+  margin-top: 10px;
+}
+.flowerTypes .buttons{
+  position: absolute;
+  left: 45%;
+  top: 105%;
+}
+.flowerTypes .buttons .circle{
+  width:12px;
+  height:12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color:#72bbf3;
+  cursor: pointer;
+}
+.flowerTypes .buttons .circle:focus{
+  background-color: #631f6f;
+}
+.types .type:hover{
+  background-color: #fff1fcd7;
+  position: relative;
+  border-radius: 25px;
+}
+.types .type:hover img{
+  position: absolute;
+  top: -10%;
+}
+.types .type:hover h3{
+  margin-top: 130px;
+}
+.types .type:hover .line{
+  background-color: #631f6f;
+}
+.types .type:hover .icon,
+.types .type:hover a{
+  color: #631f6f;
+}
+
+
+
+
+
+
+

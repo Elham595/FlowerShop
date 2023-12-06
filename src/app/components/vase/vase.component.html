@@ -1,0 +1,8 @@
+<div class="container d-grid data">
+  <div *ngFor="let vase of vaseData.vase">
+      <img [src]="vase.imageUrl" alt="">
+      <h4>Available Amount :{{vase.quantity}}</h4>
+      <h5>Price :${{vase.price}}</h5>
+      <button class="btn btn-orange">Buy Now</button>
+  </div>
+</div>
